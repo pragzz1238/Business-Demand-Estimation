@@ -1,0 +1,182 @@
+{% extends 'base.html' %}
+
+{% block main %}
+<div class="pagetitle">
+  <h1>Configurations</h1>
+  <nav>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="/home">Home</a></li>
+      <li class="breadcrumb-item">Forcast</li>
+      <li class="breadcrumb-item active">Configurations</li>
+    </ol>
+  </nav>
+</div><!-- End Page Title -->
+<section class="section">
+  <div class="row">
+    <div class="col-lg-7 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Enter Some Basic Configurations</h5>
+          <br>
+
+          <!-- Horizontal Form -->
+          <form class="mx-auto" action="/info" method="POST">
+            <div class="row">
+              <div class="col-md">
+                <label class="form-label">Battery Life:</label>
+              </div>
+              <div class="col-md mx-auto">
+                <label class="form-label">
+                  <select name="Battery_Life" method="POST" action="/">
+                    <option selected>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                  </select> &nbsp; ampHrs
+                </label>
+              </div>
+            </div></br>
+
+
+            <div class="row">
+              <div class="col-md">
+                <label class="form-label">Bundled Applications:</label>
+              </div>
+              <div class="col-md mx-auto">
+                <label class="form-label">
+                  <input class="form-check-input" type="radio" name="Bundled_Applications" value="1" checked>&nbsp; Yes
+                  &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="Bundled_Applications"
+                    value="0">&nbsp; No
+                </label>
+              </div>
+            </div></br>
+
+            <div class="row">
+              <div class="col-md">
+                <label class="form-label">HD Size :</label>
+              </div>
+              <div class="col-md mx-auto">
+                <label class="form-label">
+                  <input type="range" min="40" max="600" value="40" class="slider" id="HDRange" name="HD_Size"
+                    method="POST" action="/">
+                  &nbsp;<span id="demo"> </span>
+                  <script>
+                    var slider = document.getElementById("HDRange");
+                    var output = document.getElementById("demo");
+                    output.innerHTML = slider.value;
+
+                    slider.oninput = function () {
+                      output.innerHTML = this.value;
+                    }
+                  </script>&nbsp;gb
+                </label>
+              </div>
+            </div></br>
+
+            <div class="row">
+              <div class="col-md">
+                <label class="form-label">Integrated Wireless:</label>
+              </div>
+              <div class="col-md mx-auto">
+                <label class="form-label">
+                  <input class="form-check-input" type="radio" name="Integrated_Wireless" value="1" checked>&nbsp; Yes
+                  &nbsp;&nbsp;&nbsp;<input class="form-check-input" type="radio" name="Integrated_Wireless"
+                    value="0">&nbsp; No
+                </label>
+              </div>
+            </div></br>
+
+            <div class="row">
+              <div class="col-md">
+                <label class="form-label">Processor Speed :</label>
+              </div>
+              <div class="col-md mx-auto">
+                <label class="form-label">
+                  <select name="Processor_Speeds" method="POST" action="/info">
+                    <option selected>1.2</option>
+                    <option>2</option>
+                  </select> &nbsp; GHz
+                </label>
+              </div>
+            </div></br>
+
+            <div class="row">
+              <div class="col-md">
+                <label class="form-label">RAM :</label>
+              </div>
+              <div class="col-md mx-auto">
+                <label class="form-label">
+                  <select name="Ram" method="POST" action="/">
+                    <option selected>6</option>>
+                    <option>5</option>
+                    <option>4</option>
+                    <option>3</option>
+                    <option>2</option>
+                    <option>1</option>
+                  </select> &nbsp; GB
+                </label>
+              </div>
+            </div></br>
+
+            <div class="row">
+              <div class="col-md">
+                <label class="form-label">Retail Price:</label>
+              </div>
+              <div class="col-md mx-auto">
+                <label class="form-label">
+                  <input type="range" min="300" max="700" value="300" class="slider" id="RetailRange"
+                    name="Retail_Price" method="POST" action="/">
+                  <span id="demo2"></span>
+                  &nbsp;<span id="demo"> </span>
+                  <script>
+                    var slider1 = document.getElementById("RetailRange");
+                    var output1 = document.getElementById("demo2");
+                    output1.innerHTML = slider1.value;
+
+                    slider1.oninput = function () {
+                      output1.innerHTML = this.value;
+                    }
+                  </script>&nbsp;USD
+                </label>
+              </div>
+            </div></br>
+
+            <div class="row">
+              <div class="col-md">
+                <label class="form-label">Screen Size :</label>
+              </div>
+              <div class="col-md mx-auto">
+                <label class="form-label">
+                  <select name="Screen_Size" method="POST" action="/">
+                    <option selected>13</option>
+                    <option>14</option>
+                    <option>15</option>
+                  </select> &nbsp; Inches
+                </label>
+              </div>
+            </div></br>
+
+
+
+
+            <!-- 
+                <div class="row mb-3">
+                  <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="inputPassword">
+                  </div>
+                </div> -->
+
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary" name="form" value="Next">Submit</button>
+              <button type="reset" class="btn btn-secondary">Reset</button>
+            </div>
+          </form><!-- End Horizontal Form -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+{% endblock %}

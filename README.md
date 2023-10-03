@@ -10,8 +10,6 @@ This is a web application that utilizes Random Forest and K-Means Clustering for
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -73,7 +71,7 @@ To set up and run the Business Demand Estimation web app, follow these steps:
     ```bash
     python app.py
     ```
-6. Open your web browser and navigate to http://localhost:8081 to access the Business Demand Estimation web app.
+6. Open your web browser and access the Business Demand Estimation web app.
 
 
 ## Usage

@@ -53,3 +53,33 @@ To set up and run the Business Demand Estimation web app, follow these steps:
 
    ```bash
    git clone https://github.com/pragzz1238/Business-Demand-Prediction-Using-Classification-Based-Predicition-Model.git
+
+2. Navigate to the project directory:
+
+     ```bash
+     cd Business-Demand-Prediction-Using-Classification-Based-Predicition-Model
+     ```
+
+3. Install the required dependencies for both the front-end and back-end:
+
+     ```bash
+     cd FORSEER
+     pip install -r requirements.txt
+     ```
+
+4. Set up your MongoDB database and configure the database connection in the Flask back-end.
+
+5. Run the Flask back-end server:
+    ```bash
+    python app.py
+    ```
+6. Open your web browser and navigate to http://localhost:8081 to access the Business Demand Estimation web app.
+
+
+## Usage
+
+1. Log in to the application using your credentials or create an account if you're a new user.
+
+2. Use the app to predict laptop demand, estimate demand, and forecast sales.
+
+3. Explore the visualizations and insights provided by the app to make informed business decisions.

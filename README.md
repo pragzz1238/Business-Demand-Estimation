@@ -50,12 +50,12 @@ To set up and run the Business Demand Estimation web app, follow these steps:
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/pragzz1238/Business-Demand-Prediction-Using-Classification-Based-Predicition-Model.git
+   git clone https://github.com/pragzz1238/Business-Demand-Estimation.git
 
 2. Navigate to the project directory:
 
      ```bash
-     cd Business-Demand-Prediction-Using-Classification-Based-Predicition-Model
+     cd Business-Demand-Estimation
      ```
 
 3. Install the required dependencies for both the front-end and back-end:
